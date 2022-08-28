@@ -2,10 +2,9 @@
   <Header 
   v-model:show="displayModal"></Header>
   <RightModal
-  v-if="displayModal"
   v-model:show="displayModal"
   >
-    Авторизация
+    <Login v-model:show="displayModal"></Login>
   </RightModal>
   <div class="app">
     <router-view></router-view>
@@ -17,19 +16,20 @@
 import Header from "./components/header/Header.vue";
 import RightModal from "./components/ui/modal/RightModal.vue";
 import Footer from "./components/footer/Footer.vue";
+import Login from "./components/pages/user/login/Login.vue";
 
 export default {
-  components: { Header, RightModal, Footer },
+  components: { Header, RightModal, Footer, Login },
   data(){
     return{
-      displayModal: false
+      displayModal: false,
     }
   },
-  provide(){
-    return{
-      allScreen: 'test'
+  methods: {
+    auth(){
+      this.displayModal = this.$store.state.isAuth && false
     }
-  }
+  },
 }
 </script>
 

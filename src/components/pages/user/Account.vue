@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    Account
+    Hello ${user_name}
   </div>
 </template>
 <script>

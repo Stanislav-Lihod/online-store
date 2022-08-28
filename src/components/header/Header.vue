@@ -25,7 +25,6 @@
             <div class="user-block__item" 
               v-if="$store.state.isAuth"
               @click="activeAccountSettings"
-              @click.stop
               >
               Account
               <div class="user-account" :class="{active: activeAccount}">
@@ -47,8 +46,6 @@
 
 <script>
 export default {
-  props:{
-  },
   data(){
     return{
       activeAccount: false
@@ -61,12 +58,6 @@ export default {
     activeAccountSettings(e){
       this.activeAccount = true
     },
-  },
-  inject:[
-    'allScreen',
-  ],
-  mounted(){
-    console.log(this.allScreen)
   }
 }
 </script>
@@ -118,6 +109,11 @@ export default {
 
             &-item{
               padding: 10px;
+              margin-right: 10px;
+
+              &:last-child{
+                margin-right: 0;
+              }
             }
           }
         }
@@ -133,6 +129,7 @@ export default {
           }
 
           .user-account{
+            background-color: white;
             visibility: hidden;
             opacity: 0;
             display: flex;

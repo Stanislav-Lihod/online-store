@@ -28,7 +28,7 @@ export default {
 
 <style scoped lang="scss">
 .rightModal{
-  background-color: rgba(0,0,0, 0.1);
+  background-color: rgba(0,0,0, 0.15);
   width: 100%;
   height: 100%;
   top: 0;
@@ -47,7 +47,7 @@ export default {
     right: -400px;
     top: 0;
     height: 100%;
-    padding: 40px 20px;
+    padding: 40px;
     transition: .3s;
     box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.3);
   }

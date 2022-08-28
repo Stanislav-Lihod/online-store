@@ -2,7 +2,7 @@ import { createStore,  } from "vuex"
 
 export default createStore({
   state:{
-    isAuth: true,
+    isAuth: false,
   },
   getters:{
     // computed properties
@@ -10,6 +10,9 @@ export default createStore({
   mutations:{
     deauthorization(state){
       state.isAuth = false
+    },
+    authorization(state){
+      state.isAuth = true
     }
     // Изменяем стейт
   },
