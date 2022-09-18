@@ -1,11 +1,6 @@
 <template>
   <div class="container">
-    <div v-if="$store.state.isAuth">
-      Your basket is Empty
-    </div>
-    <div v-else>
-      Please Auth
-    </div>
+    Your Vishlist is Empty
   </div>
 </template>
 <script>

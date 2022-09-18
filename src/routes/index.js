@@ -1,6 +1,7 @@
 import Main from '@/components/pages/catalog/Main'
 import ContactUs from '@/components/pages/contact/ContactUs'
 import Basket from '@/components/pages/basket/Basket'
+import Vishlist from '@/components/pages/vishlist/Vishlist'
 import Account from '@/components/pages/user/Account'
 import CardShoes from '@/components/pages/catalog/shoes/CardShoes'
 import Catalog from '@/components/pages/catalog/Catalog'
@@ -19,9 +20,12 @@ const routes = [
     component: ContactUs
   },
   {
-    meta: {auth: true},
     path: '/order/basket',
     component: Basket
+  },
+  {
+    path: '/order/vishlist',
+    component: Vishlist
   },
   {
     meta: {auth: true},
@@ -29,7 +33,32 @@ const routes = [
     component: Account
   },
   {
-    path: '/catalog/shoes',
+    path: '/catalog/sale',
+    component: Catalog,
+    meta:{chapter: 'shoes'}
+  },
+  {
+    path: '/catalog/accessories',
+    component: Catalog,
+    meta:{chapter: 'accessories'}
+  },
+  {
+    path: '/catalog/shoes/men',
+    component: Catalog,
+    meta:{chapter: 'shoes'}
+  },
+  {
+    path: '/catalog/shoes/women',
+    component: Catalog,
+    meta:{chapter: 'shoes'}
+  },
+  {
+    path: '/catalog/shoes/child',
+    component: Catalog,
+    meta:{chapter: 'shoes'}
+  },
+  {
+    path: '/catalog/shoes/new',
     component: Catalog,
     meta:{chapter: 'shoes'}
   },

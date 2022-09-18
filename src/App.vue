@@ -60,10 +60,6 @@ html{
 a{
   color: black;
   text-decoration: none;
-
-  &:hover{
-    text-decoration: underline;
-  }
 }
 
 #app{
@@ -77,7 +73,7 @@ a{
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1440px;
   padding: 0 40px;
   margin: 0 auto;
 }

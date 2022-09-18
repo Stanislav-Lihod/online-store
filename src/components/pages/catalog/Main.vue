@@ -1,12 +1,16 @@
 <template>
-  <PricingBanner/>
+  <BannerTop/>
+  <BannerCenter/>
+  <BannerBottom/>
 </template>
 
 <script>
 import Catalog from './Catalog.vue'
-import PricingBanner from './PricingBanner.vue';
+import BannerTop from '../../ui/banners/BannerTop.vue';
+import BannerBottom from '@/components/ui/banners/BannerBottom.vue';
+import BannerCenter from '@/components/ui/banners/BannerCenter.vue';
 export default {
-  components: { PricingBanner, Catalog },
+  components: { Catalog, BannerTop, BannerBottom, BannerCenter },
 }
 </script>
 
