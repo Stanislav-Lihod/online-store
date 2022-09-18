@@ -17,8 +17,7 @@
               </svg>
             </router-link>
             <div class="nav-block__navigation">
-              <router-link to="/catalog/phone" class="nav-block__navigation-item">Phone</router-link>
-              <router-link to="/catalog/laptop" class="nav-block__navigation-item">Laptop</router-link>
+              <router-link to="/catalog/shoes" class="nav-block__navigation-item">Shoes</router-link>
             </div>
           </div>
           <div class="user-block">
@@ -63,10 +62,6 @@ export default {
 </script>
 
 <style lang="scss">
-  header{
-    margin-bottom: 20px;
-  }
-
   .header{
     &-info{
       background-color: black;
@@ -126,6 +121,10 @@ export default {
             margin-left: 10px;
             cursor: pointer;
             position: relative;
+
+            &:hover{
+              text-decoration: underline;
+            }
           }
 
           .user-account{

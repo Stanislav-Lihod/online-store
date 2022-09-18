@@ -28,7 +28,6 @@ export default {
 
 <style scoped lang="scss">
 .rightModal{
-  background-color: rgba(0,0,0, 0.15);
   width: 100%;
   height: 100%;
   top: 0;

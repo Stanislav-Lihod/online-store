@@ -1,9 +1,10 @@
 import { createStore,  } from "vuex"
+import { shoesModule } from "./shoesModule"
 
 export default createStore({
-  state:{
+  state: ()=> ({
     isAuth: false,
-  },
+  }),
   getters:{
     // computed properties
   },
@@ -21,6 +22,7 @@ export default createStore({
   },
   modules:{
     // Кусок стейта с своими гетеррами мутациями с экшенами
+    shoes: shoesModule
   }
 })
 
