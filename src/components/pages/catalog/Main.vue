@@ -1,5 +1,6 @@
 <template>
   <BannerTop/>
+  <PopularShoes/>
   <BannerCenter/>
   <BannerBottom/>
 </template>
@@ -9,8 +10,9 @@ import Catalog from './Catalog.vue'
 import BannerTop from '../../ui/banners/BannerTop.vue';
 import BannerBottom from '@/components/ui/banners/BannerBottom.vue';
 import BannerCenter from '@/components/ui/banners/BannerCenter.vue';
+import PopularShoes from '@/components/ui/banners/popularShoes.vue';
 export default {
-  components: { Catalog, BannerTop, BannerBottom, BannerCenter },
+  components: { Catalog, BannerTop, BannerBottom, BannerCenter, PopularShoes },
 }
 </script>
 

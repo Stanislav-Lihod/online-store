@@ -1,5 +1,6 @@
 import { createStore,  } from "vuex"
 import { shoesModule } from "./shoesModule"
+import { popularShoes } from "./popularShoes"
 
 export default createStore({
   state: ()=> ({
@@ -22,7 +23,8 @@ export default createStore({
   },
   modules:{
     // Кусок стейта с своими гетеррами мутациями с экшенами
-    shoes: shoesModule
+    shoes: shoesModule,
+    popular: popularShoes,
   }
 })
 

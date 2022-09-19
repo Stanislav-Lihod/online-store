@@ -35,7 +35,10 @@ const routes = [
   {
     path: '/catalog/sale',
     component: Catalog,
-    meta:{chapter: 'shoes'}
+    meta:{
+      chapter: 'sale',
+      breadcrumbs: 'Sale'
+    }
   },
   {
     path: '/catalog/accessories',
@@ -45,22 +48,34 @@ const routes = [
   {
     path: '/catalog/shoes/men',
     component: Catalog,
-    meta:{chapter: 'shoes'}
+    meta:{
+      chapter: 'shoes', 
+      breadcrumbs: "Men's shoes"
+    }
   },
   {
     path: '/catalog/shoes/women',
     component: Catalog,
-    meta:{chapter: 'shoes'}
+    meta:{
+      chapter: 'shoes', 
+      breadcrumbs: "Women shoes"
+    }
   },
   {
     path: '/catalog/shoes/child',
     component: Catalog,
-    meta:{chapter: 'shoes'}
+    meta:{
+      chapter: 'shoes', 
+      breadcrumbs: "Children shoes"
+    }
   },
   {
     path: '/catalog/shoes/new',
     component: Catalog,
-    meta:{chapter: 'shoes'}
+    meta:{
+      chapter: 'shoes', 
+      breadcrumbs: "New collection"
+    }
   },
   {
     path: '/catalog/shoes/:id',

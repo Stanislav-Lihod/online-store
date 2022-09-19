@@ -2,6 +2,7 @@
   <section class="catalog">
     <div class="container">
       <CatalogShoes v-if="$route.meta.chapter == 'shoes'"/>
+      <CatalogShoes v-if="$route.meta.chapter == 'sale'"/>
       <CatalogAcc v-if="$route.meta.chapter == 'accessories'"/>
     </div>
   </section>
